@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+    color: #00ff00;
+    font-family: "Courier New", monospace;
+}
+
+h1, h2 {
+    text-shadow: 0 0 10px #00ff00;
+}
+
+section {
+    margin: 40px;
+}
+
+ul {
+    list-style-type: square;
+}
