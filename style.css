@@ -38,3 +38,37 @@ input {
     outline: none;
     width: 80%;
 }
+
+
+.top-nav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.top-nav button {
+    background: transparent;
+    border: 1px solid #00ff88;
+    color: #00ff88;
+    padding: 8px 14px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.page {
+    display: none;
+    padding: 100px 60px;
+}
+
+.page.active {
+    display: block;
+}
+
+.card {
+    background: rgba(0, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    padding: 20px;
+    margin-bottom: 30px;
+    backdrop-filter: blur(5px);
+}
