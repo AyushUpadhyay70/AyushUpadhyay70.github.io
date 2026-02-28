@@ -1,51 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Ayush Upadhyay | Cyber Security Analyst</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="terminal">
-    <h1>> Ayush Upadhyay</h1>
-    <p>Cyber Security Analyst | SIEM | Threat Detection | Python Automation</p>
+<canvas id="matrix"></canvas>
+
+<div class="terminal-container">
+    <div id="terminal"></div>
+    <div class="input-line">
+        <span>> </span>
+        <input type="text" id="commandInput" autofocus />
+    </div>
 </div>
 
-<section>
-    <h2>> About Me</h2>
-    <p>
-        Cyber Security Analyst experienced in Microsoft Sentinel, KQL, 
-        network traffic analysis and security automation.
-    </p>
-</section>
-
-<section>
-    <h2>> Skills</h2>
-    <ul>
-        <li>Microsoft Sentinel (SIEM)</li>
-        <li>KQL (Kusto Query Language)</li>
-        <li>Wireshark & Nmap</li>
-        <li>Python Security Automation</li>
-        <li>Ubuntu & Kali Linux</li>
-        <li>Autopsy & Ghidra</li>
-    </ul>
-</section>
-
-<section>
-    <h2>> Projects</h2>
-    <ul>
-        <li>Advanced Packet Sniffer & ARP Detector</li>
-        <li>Phishing Website Detector</li>
-        <li>Basic Antivirus Simulation</li>
-        <li>Twitter Sentiment Analysis</li>
-    </ul>
-</section>
-
-<section>
-    <h2>> Contact</h2>
-    <p>Email: ayush707070@gmail.com</p>
-    <p>GitHub: github.com/AyushUpadhyay70</p>
-</section>
+<script src="matrix.js"></script>
+<script src="terminal.js"></script>
 
 </body>
 </html>
