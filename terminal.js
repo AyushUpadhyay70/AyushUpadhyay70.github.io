@@ -26,7 +26,7 @@ OS: Ubuntu, Kali Linux
 `,
 
     experience: `
-Cyber Security Analyst
+Cyber Security Analyst 
 - Security monitoring using Microsoft Sentinel
 - KQL threat detection queries
 - Network traffic investigation
