@@ -1,25 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Ayush Upadhyay | Cyber Security Analyst</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Ayush Upadhyay | Cyber Security Analyst</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <canvas id="matrix"></canvas>
 
-<div class="terminal-container">
-    <div id="terminal"></div>
-    <div class="input-line">
-        <span>> </span>
-        <input type="text" id="commandInput" autofocus />
+<div class="top-nav">
+    <button onclick="showGUI()">GUI MODE</button>
+    <button onclick="showTerminal()">TERMINAL MODE</button>
+</div>
+
+<!-- GUI MODE -->
+<div id="guiMode" class="page active">
+
+    <div class="card">
+        <h1>Ayush Upadhyay</h1>
+        <p>Cyber Security Analyst | SIEM | Threat Detection | Python Automation</p>
     </div>
+
+    <div class="card">
+        <h2>Skills</h2>
+        <p>Microsoft Sentinel, KQL, Wireshark, Nmap, Python, Ubuntu, Kali Linux, Autopsy, Ghidra</p>
+    </div>
+
+    <div class="card">
+        <h2>Experience</h2>
+        <p>Cyber Security Analyst (Jan 2025 - Feb 2026)</p>
+        <p>Security Monitoring | Threat Detection | Log Analysis | Automation</p>
+    </div>
+
+</div>
+
+<!-- TERMINAL MODE -->
+<div id="terminalMode" class="page">
+
+    <div class="terminal-container">
+        <div id="terminal"></div>
+        <div class="input-line">
+            <span>> </span>
+            <input type="text" id="commandInput" autofocus />
+        </div>
+    </div>
+
 </div>
 
 <script src="matrix.js"></script>
 <script src="terminal.js"></script>
+
+<script>
+function showGUI() {
+    document.getElementById("guiMode").classList.add("active");
+    document.getElementById("terminalMode").classList.remove("active");
+}
+
+function showTerminal() {
+    document.getElementById("terminalMode").classList.add("active");
+    document.getElementById("guiMode").classList.remove("active");
+}
+</script>
 
 </body>
 </html>
